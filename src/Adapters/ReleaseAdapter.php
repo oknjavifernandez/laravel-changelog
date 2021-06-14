@@ -11,9 +11,11 @@ interface ReleaseAdapter
      *
      * @param string $path
      * @param string $version
+     * @param string $visibility
+     * 
      * @return Release
      */
-    public function read(string $path, string $version): Release;
+    public function read(string $path, string $version, string $visibility): Release;
 
     /**
      * Load all releases for the given path.
