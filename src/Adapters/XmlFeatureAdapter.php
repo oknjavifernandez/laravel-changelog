@@ -52,7 +52,7 @@ class XmlFeatureAdapter implements FeatureAdapter
             if (is_null($type)) {
                 throw new InvalidXmlException('Missing `type` attribute on change element.');
             }
-            $message = (string) json_encode($attributes['@attributes'])."  ".$change;
+            $message = (string) $change;
 
             if($scope == 'all' || $scope == $visibility){
                 $feature->add(new Change($type, $message, $visibility));
