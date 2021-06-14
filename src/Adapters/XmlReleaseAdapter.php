@@ -30,9 +30,11 @@ class XmlReleaseAdapter implements ReleaseAdapter
      *
      * @param string $path
      * @param string $version
+     * @param string $scope
+     *
      * @return Release
      */
-    public function read(string $path, string $version, string $visibility): Release
+    public function read(string $path, string $version, string $scope): Release
     {
         $fullPath = $path.DIRECTORY_SEPARATOR.$version;
 
@@ -46,13 +48,8 @@ class XmlReleaseAdapter implements ReleaseAdapter
 
         $release = new Release($version);
         foreach ($files as $file) {
-            $feature = $this->featureAdapter->read($fullPath.DIRECTORY_SEPARATOR.$file);
-
-            $granted = $visibility == 'all' || $visibility == $feature->visibility();
-
-            if($granted){
-                $release->add($feature);
-            }
+            $feature = $this->featureAdapter->read($fullPath.DIRECTORY_SEPARATOR.$file, $scope);
+            $release->add($feature);
         }
 
         return $release;

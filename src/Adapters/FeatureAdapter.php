@@ -10,9 +10,11 @@ interface FeatureAdapter
      * Load a feature.
      *
      * @param string $path
+     * @param string $scope
+     *
      * @return Feature
      */
-    public function read(string $path): Feature;
+    public function read(string $path, string $scope): Feature;
 
     /**
      * Store a feature.

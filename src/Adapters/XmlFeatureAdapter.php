@@ -28,9 +28,11 @@ class XmlFeatureAdapter implements FeatureAdapter
      * Load a feature.
      *
      * @param string $path
+     * @param string $scope
+     *
      * @return Feature
      */
-    public function read(string $path): Feature
+    public function read(string $path, string $scope): Feature
     {
         try {
             $content = $this->filesystem->get($path);
@@ -50,7 +52,9 @@ class XmlFeatureAdapter implements FeatureAdapter
             }
             $message = (string) $change;
 
-            $feature->add(new Change($type, $message, $visibility));
+            if($scope == 'all' || $scope == $visibility){
+                $feature->add(new Change($type, $message, $visibility));
+            }
         }
 
         return $feature;
