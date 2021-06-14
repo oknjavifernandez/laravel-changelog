@@ -25,7 +25,7 @@ interface ReleaseAdapter
      * 
      * @return Release[]|array
      */
-    public function all(string $path, $visibility): array;
+    public function all(string $path, string $visibility): array;
 
     /**
      * Move the unreleased changes to a versioned release.
