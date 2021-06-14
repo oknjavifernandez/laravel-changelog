@@ -27,8 +27,8 @@ class ChangelogAddCommand extends Command
     /**
      * Execute the command.
      *
-     * @param GitDriver $gitState
-     * @param FeatureAdapter $adapter
+     * @param \MarkWallet\GitState\Drivers\GitDriver $gitState
+     * @param \OknJaviFernandez\Changelog\Adapters\FeatureAdapter $adapter
      */
     public function handle(GitDriver $gitState, FeatureAdapter $adapter)
     {
