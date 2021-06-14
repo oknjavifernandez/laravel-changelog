@@ -1,0 +1,49 @@
+{
+  "name": "oknjavifernandez/laravel-changelog",
+  "description": "Extended version of https://github.com/markwalet/laravel-changelog",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Javier Fernandez",
+      "email": "fjfernandez@openknowledgenetwork.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3",
+    "illuminate/console": "6.*|7.*|8.*",
+    "illuminate/contracts": "6.*|7.*|8.*",
+    "illuminate/support": "6.*|7.*|8.*",
+    "illuminate/filesystem": "6.*|7.*|8.*",
+    "markwalet/laravel-git-state": "~1.0",
+    "ext-simplexml": "*",
+    "ext-dom": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~7.0|~8.0",
+    "orchestra/testbench": "4.*|5.*|6.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "OknJaviFernandez\\Changelog\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "OknJaviFernandez\\Changelog\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "OknJaviFernandez\\Changelog\\ChangelogServiceProvider"
+      ],
+      "aliases": {
+        "Changelog": "OknJaviFernandez\\Changelog\\Facades\\Changelog"
+      }
+    }
+  }
+}
