@@ -1,12 +1,12 @@
 <?php
 
-namespace MarkWalet\Changelog;
+namespace OknJaviFernandez\Changelog;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Arr;
-use MarkWalet\Changelog\Exceptions\InvalidArgumentException;
-use MarkWalet\Changelog\Exceptions\MissingConfigurationException;
-use MarkWalet\Changelog\Formatters\ChangelogFormatter;
+use OknJaviFernandez\Changelog\Exceptions\InvalidArgumentException;
+use OknJaviFernandez\Changelog\Exceptions\MissingConfigurationException;
+use OknJaviFernandez\Changelog\Formatters\ChangelogFormatter;
 
 class ChangelogFormatterFactory
 {

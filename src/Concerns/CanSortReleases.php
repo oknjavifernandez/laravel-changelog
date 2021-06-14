@@ -1,6 +1,6 @@
 <?php
 
-namespace MarkWalet\Changelog\Concerns;
+namespace OknJaviFernandez\Changelog\Concerns;
 
 trait CanSortReleases
 {

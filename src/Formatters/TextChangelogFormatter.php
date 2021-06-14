@@ -1,8 +1,8 @@
 <?php
 
-namespace MarkWalet\Changelog\Formatters;
+namespace OknJaviFernandez\Changelog\Formatters;
 
-use MarkWalet\Changelog\Release;
+use OknJaviFernandez\Changelog\Release;
 
 class TextChangelogFormatter extends ChangelogFormatter
 {

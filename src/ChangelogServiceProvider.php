@@ -1,18 +1,18 @@
 <?php
 
-namespace MarkWalet\Changelog;
+namespace OknJaviFernandez\Changelog;
 
 use Illuminate\Foundation\Application;
 use Illuminate\Support\ServiceProvider;
-use MarkWalet\Changelog\Adapters\FeatureAdapter;
-use MarkWalet\Changelog\Adapters\ReleaseAdapter;
-use MarkWalet\Changelog\Adapters\XmlFeatureAdapter;
-use MarkWalet\Changelog\Adapters\XmlReleaseAdapter;
-use MarkWalet\Changelog\Commands\ChangelogAddCommand;
-use MarkWalet\Changelog\Commands\ChangelogGenerateCommand;
-use MarkWalet\Changelog\Commands\ChangelogListCommand;
-use MarkWalet\Changelog\Commands\ChangelogReleaseCommand;
-use MarkWalet\Changelog\Commands\ChangelogUnreleasedCommand;
+use OknJaviFernandez\Changelog\Adapters\FeatureAdapter;
+use OknJaviFernandez\Changelog\Adapters\ReleaseAdapter;
+use OknJaviFernandez\Changelog\Adapters\XmlFeatureAdapter;
+use OknJaviFernandez\Changelog\Adapters\XmlReleaseAdapter;
+use OknJaviFernandez\Changelog\Commands\ChangelogAddCommand;
+use OknJaviFernandez\Changelog\Commands\ChangelogGenerateCommand;
+use OknJaviFernandez\Changelog\Commands\ChangelogListCommand;
+use OknJaviFernandez\Changelog\Commands\ChangelogReleaseCommand;
+use OknJaviFernandez\Changelog\Commands\ChangelogUnreleasedCommand;
 
 class ChangelogServiceProvider extends ServiceProvider
 {

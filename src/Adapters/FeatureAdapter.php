@@ -1,8 +1,8 @@
 <?php
 
-namespace MarkWalet\Changelog\Adapters;
+namespace OknJaviFernandez\Changelog\Adapters;
 
-use MarkWalet\Changelog\Feature;
+use OknJaviFernandez\Changelog\Feature;
 
 interface FeatureAdapter
 {

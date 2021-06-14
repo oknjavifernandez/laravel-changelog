@@ -1,6 +1,6 @@
 <?php
 
-namespace MarkWalet\Changelog\Exceptions;
+namespace OknJaviFernandez\Changelog\Exceptions;
 
 use RuntimeException;
 

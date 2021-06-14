@@ -1,11 +1,11 @@
 <?php
 
-namespace MarkWalet\Changelog\Commands;
+namespace OknJaviFernandez\Changelog\Commands;
 
 use Illuminate\Console\Command;
-use MarkWalet\Changelog\Adapters\ReleaseAdapter;
-use MarkWalet\Changelog\ChangelogFormatterFactory;
-use MarkWalet\Changelog\Release;
+use OknJaviFernandez\Changelog\Adapters\ReleaseAdapter;
+use OknJaviFernandez\Changelog\ChangelogFormatterFactory;
+use OknJaviFernandez\Changelog\Release;
 
 class ChangelogListCommand extends Command
 {

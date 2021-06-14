@@ -1,8 +1,8 @@
 <?php
 
-use MarkWalet\Changelog\Formatters\MarkdownChangelogFormatter;
-use MarkWalet\Changelog\Formatters\SlackChangelogFormatter;
-use MarkWalet\Changelog\Formatters\TextChangelogFormatter;
+use \Changelog\Formatters\MarkdownChangelogFormatter;
+use OknJaviFernandez\Changelog\Formatters\SlackChangelogFormatter;
+use OknJaviFernandez\Changelog\Formatters\TextChangelogFormatter;
 
 return [
     /*

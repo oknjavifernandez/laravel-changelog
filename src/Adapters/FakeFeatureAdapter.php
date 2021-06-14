@@ -1,10 +1,10 @@
 <?php
 
-namespace MarkWalet\Changelog\Adapters;
+namespace OknJaviFernandez\Changelog\Adapters;
 
-use MarkWalet\Changelog\Change;
-use MarkWalet\Changelog\Exceptions\FileNotFoundException;
-use MarkWalet\Changelog\Feature;
+use OknJaviFernandez\Changelog\Change;
+use OknJaviFernandez\Changelog\Exceptions\FileNotFoundException;
+use OknJaviFernandez\Changelog\Feature;
 
 class FakeFeatureAdapter implements FeatureAdapter
 {

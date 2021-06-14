@@ -1,13 +1,13 @@
 <?php
 
-namespace MarkWalet\Changelog\Adapters;
+namespace OknJaviFernandez\Changelog\Adapters;
 
 use DOMDocument;
 use Illuminate\Filesystem\Filesystem;
-use MarkWalet\Changelog\Change;
-use MarkWalet\Changelog\Exceptions\FileNotFoundException;
-use MarkWalet\Changelog\Exceptions\InvalidXmlException;
-use MarkWalet\Changelog\Feature;
+use OknJaviFernandez\Changelog\Change;
+use OknJaviFernandez\Changelog\Exceptions\FileNotFoundException;
+use OknJaviFernandez\Changelog\Exceptions\InvalidXmlException;
+use OknJaviFernandez\Changelog\Feature;
 
 class XmlFeatureAdapter implements FeatureAdapter
 {

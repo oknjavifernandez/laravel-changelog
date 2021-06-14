@@ -1,12 +1,12 @@
 <?php
 
-namespace MarkWalet\Changelog\Commands;
+namespace OknJaviFernandez\Changelog\Commands;
 
 use Illuminate\Console\Command;
-use MarkWalet\Changelog\Adapters\FeatureAdapter;
-use MarkWalet\Changelog\Change;
-use MarkWalet\Changelog\Feature;
-use MarkWalet\GitState\Drivers\GitDriver;
+use OknJaviFernandez\Changelog\Adapters\FeatureAdapter;
+use OknJaviFernandez\Changelog\Change;
+use OknJaviFernandez\Changelog\Feature;
+use OknJaviFernandez\GitState\Drivers\GitDriver;
 
 class ChangelogAddCommand extends Command
 {

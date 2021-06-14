@@ -1,6 +1,6 @@
 <?php
 
-namespace MarkWalet\Changelog;
+namespace OknJaviFernandez\Changelog;
 
 use Illuminate\Support\Arr;
 

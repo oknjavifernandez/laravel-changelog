@@ -1,8 +1,8 @@
 <?php
 
-namespace MarkWalet\Changelog\Adapters;
+namespace OknJaviFernandez\Changelog\Adapters;
 
-use MarkWalet\Changelog\Release;
+use OknJaviFernandez\Changelog\Release;
 
 interface ReleaseAdapter
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace MarkWalet\Changelog\Adapters;
+namespace OknJaviFernandez\Changelog\Adapters;
 
-use MarkWalet\Changelog\Concerns\CanSortReleases;
-use MarkWalet\Changelog\Exceptions\DirectoryNotFoundException;
-use MarkWalet\Changelog\Exceptions\FileNotFoundException;
-use MarkWalet\Changelog\Exceptions\VersionAlreadyExistsException;
-use MarkWalet\Changelog\Release;
+use OknJaviFernandez\Changelog\Concerns\CanSortReleases;
+use OknJaviFernandez\Changelog\Exceptions\DirectoryNotFoundException;
+use OknJaviFernandez\Changelog\Exceptions\FileNotFoundException;
+use OknJaviFernandez\Changelog\Exceptions\VersionAlreadyExistsException;
+use OknJaviFernandez\Changelog\Release;
 
 class FakeReleaseAdapter implements ReleaseAdapter
 {

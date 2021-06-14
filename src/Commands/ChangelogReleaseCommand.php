@@ -1,10 +1,10 @@
 <?php
 
-namespace MarkWalet\Changelog\Commands;
+namespace OknJaviFernandez\Changelog\Commands;
 
 use Illuminate\Console\Command;
-use MarkWalet\Changelog\Adapters\ReleaseAdapter;
-use MarkWalet\Changelog\Exceptions\VersionAlreadyExistsException;
+use OknJaviFernandez\Changelog\Adapters\ReleaseAdapter;
+use OknJaviFernandez\Changelog\Exceptions\VersionAlreadyExistsException;
 
 class ChangelogReleaseCommand extends Command
 {
