@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 use OknJaviFernandez\Changelog\Adapters\FeatureAdapter;
 use OknJaviFernandez\Changelog\Change;
 use OknJaviFernandez\Changelog\Feature;
-use MarkWallet\GitState\Drivers\GitDriver;
+use MarkWalet\GitState\Drivers\GitDriver;
 
 class ChangelogAddCommand extends Command
 {
@@ -27,7 +27,7 @@ class ChangelogAddCommand extends Command
     /**
      * Execute the command.
      *
-     * @param \MarkWallet\GitState\Drivers\GitDriver $gitState
+     * @param \MarkWalet\GitState\Drivers\GitDriver $gitState
      * @param \OknJaviFernandez\Changelog\Adapters\FeatureAdapter $adapter
      */
     public function handle(GitDriver $gitState, FeatureAdapter $adapter)
