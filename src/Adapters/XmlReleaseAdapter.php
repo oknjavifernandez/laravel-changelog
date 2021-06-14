@@ -32,7 +32,7 @@ class XmlReleaseAdapter implements ReleaseAdapter
      * @param string $version
      * @return Release
      */
-    public function read(string $path, string $version): Release
+    public function read(string $path, string $version, string $visibility): Release
     {
         $fullPath = $path.DIRECTORY_SEPARATOR.$version;
 
@@ -47,7 +47,12 @@ class XmlReleaseAdapter implements ReleaseAdapter
         $release = new Release($version);
         foreach ($files as $file) {
             $feature = $this->featureAdapter->read($fullPath.DIRECTORY_SEPARATOR.$file);
-            $release->add($feature);
+
+            $granted = $visibility == 'all' || $visibility == $feature->visibility();
+
+            if($granted){
+                $release->add($feature);
+            }
         }
 
         return $release;
@@ -76,9 +81,11 @@ class XmlReleaseAdapter implements ReleaseAdapter
      * Load all releases for the given path.
      *
      * @param string $path
+     * @param string $visibility
+     *
      * @return Release[]|array
      */
-    public function all(string $path): array
+    public function all(string $path, string $visibility): array
     {
         if (is_dir($path) === false) {
             throw new DirectoryNotFoundException($path);
@@ -92,7 +99,7 @@ class XmlReleaseAdapter implements ReleaseAdapter
 
         $releases = [];
         foreach ($versions as $version) {
-            $releases[] = $this->read($path, $version);
+            $releases[] = $this->read($path, $version, $visibility);
         }
 
         return $releases;

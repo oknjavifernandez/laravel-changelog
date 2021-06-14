@@ -44,12 +44,13 @@ class XmlFeatureAdapter implements FeatureAdapter
 
         foreach ($element->children() as $change) {
             $type = $change->attributes()['type'];
+            $visibility = array_key_exists('visibility', $change->attributes()) ? $change->attributes()['visibility'] : 'public';
             if (is_null($type)) {
                 throw new InvalidXmlException('Missing `type` attribute on change element.');
             }
             $message = (string) $change;
 
-            $feature->add(new Change($type, $message));
+            $feature->add(new Change($type, $message, $visibility));
         }
 
         return $feature;
