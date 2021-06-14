@@ -15,7 +15,7 @@ class ChangelogAddCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'changelog:add {--type=} {--message=}';
+    protected $signature = 'changelog:add {--type=} {--message=} {--visibility=}';
 
     /**
      * The console command description.
