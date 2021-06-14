@@ -21,9 +21,11 @@ interface ReleaseAdapter
      * Load all releases for the given path.
      *
      * @param string $path
+     * @param string $visibility
+     * 
      * @return Release[]|array
      */
-    public function all(string $path): array;
+    public function all(string $path, $visibility): array;
 
     /**
      * Move the unreleased changes to a versioned release.
