@@ -72,6 +72,7 @@ class XmlFeatureAdapter implements FeatureAdapter
         foreach ($feature->changes() as $change) {
             $element = $xml->createElement('change', $change->message());
             $element->setAttribute('type', $change->type());
+            $element->setAttribute('visibility', $change->visibility());
             $root->appendChild($element);
         }
 

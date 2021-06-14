@@ -38,7 +38,8 @@ class ChangelogAddCommand extends Command
 
         $change = new Change(
             $this->getTypeArgument(),
-            $this->getMessageArgument()
+            $this->getMessageArgument(),
+            $this->getVisibilityArgument()
         );
 
         $feature->add($change);
@@ -120,5 +121,17 @@ class ChangelogAddCommand extends Command
         }
 
         return $message;
+    }
+
+    /**
+     * Get the visibility argument.
+     *
+     * @return string
+     */
+    private function getVisibilityArgument(): string
+    {
+        $visibility = $this->option('visibility') ?? 'private';
+
+        return $visibility;
     }
 }

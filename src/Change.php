@@ -15,14 +15,20 @@ class Change
     private $message;
 
     /**
+     * @var string
+     */
+    private $visibility;
+
+    /**
      * Change constructor.
      *
      * @param string $type
      * @param string $message
      */
-    public function __construct(string $type, string $message)
+    public function __construct(string $type, string $message, string $visibility = 'private')
     {
         $this->type = strtolower($type);
+        $this->visibility = strtolower($visibility);
         $this->message = $message;
     }
 
@@ -44,5 +50,15 @@ class Change
     public function message(): string
     {
         return $this->message;
+    }
+
+    /**
+     * Get the message of the change.
+     *
+     * @return string
+     */
+    public function visibility(): string
+    {
+        return $this->visibility;
     }
 }
