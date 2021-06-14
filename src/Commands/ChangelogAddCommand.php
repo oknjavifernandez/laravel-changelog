@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 use OknJaviFernandez\Changelog\Adapters\FeatureAdapter;
 use OknJaviFernandez\Changelog\Change;
 use OknJaviFernandez\Changelog\Feature;
-use OknJaviFernandez\GitState\Drivers\GitDriver;
+use MarkWallet\GitState\Drivers\GitDriver;
 
 class ChangelogAddCommand extends Command
 {
